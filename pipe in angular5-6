@@ -1,0 +1,24 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+
+biodata = {
+  name : "pushpendra",
+  age :25,
+  born: new Date(1989, 7,5),
+  salery:45000
+}
+
+}
+-----------------------------------------------------
+
+<p>
+  My name is a {{biodata.name | uppercase}}.  i was born  in {{biodata.born | date}}.
+
+  my age is {{biodata.age}}. my currents salery is {{biodata.salery| currency}}
+</p>
